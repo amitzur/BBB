@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test File</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+    <script src="../backbone.bridge.js"></script>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script>
+        
+        Backbone.Widget("test", Backbone.View.extend({
+            initialize: function(options) {
+                this.$el.append("test widget created in this element: " + options.name).css("border", "1px solid red");
+            } 
+        }));
+        
+        $("#main").test({ name: "amit" });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "BBB",
+  "version": "1.0.0",
+  "description": "Backbone Bridge - your view, jquery style",
+  "main": "backbone.bridge.js",
+  "repository": "https://github.com/amitzur/BBB",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "jquery": "^2.1.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "jasmine": "^2.0.1"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "Backbone",
+    "jQuery"
+  ],
+  "author": "Amit Zur <zur.amit@gmail.com>",
+  "license": "ISC"
+}
